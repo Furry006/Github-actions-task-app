@@ -1,12 +1,15 @@
-
+#pipeline name 
 name: CICD
-
+# how it gets run or triggered
 on:
   workflow_dispatch:
-
+# what are jobs it should do in the pipeline
 jobs:
+# tasks of jobs like code build test deploy
   code:
+  # it uses the unbuntu-slim for code 
     runs-on: ubuntu-slim
+  # what are things it will do in the ubuntu-slim we can define multiple steps also
     steps:
       - name: Clone the Code
         uses: actions/checkout@v4
