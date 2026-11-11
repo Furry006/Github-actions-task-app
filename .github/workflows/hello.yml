@@ -1,0 +1,16 @@
+# workflow
+# wrokflow should have a name also 
+name: Hello
+# on is when the workflow triggers
+on: 
+  workflow_dispatch: 
+# job tells what the workflow should do
+jobs: 
+  
+  say-hello: 
+    runs-on: ubuntu-slim
+    steps: 
+      - name: Say hello to everyone
+        run : echo "Hello guys"
+
+
