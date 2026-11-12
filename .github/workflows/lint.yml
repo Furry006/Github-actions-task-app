@@ -1,0 +1,16 @@
+# whenever someone changes the python code linter check the syntax, format, indentation is correct or not
+name: Auto Linter
+
+on: 
+  push: 
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-slim
+# this actions is clone the code from the repo
+    steps:
+      - name: Checkout/clone the code
+        uses: actions/checkout@v7
+        
+    
