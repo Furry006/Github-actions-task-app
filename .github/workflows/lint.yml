@@ -15,6 +15,9 @@ jobs:
 # this will install linter "ruff" so that it can checks the code
       - name: install linter
         run: pip install ruff
+# this step will run the linter
+      - name: Check the files for linting
+        run: ruff check .
         
         
     
