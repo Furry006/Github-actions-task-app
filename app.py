@@ -19,4 +19,5 @@ if is_prime(num):
     print(f"{num} prime number hai")
 else:
     print(f"{num} prime number nahi hai")
-
+    
+print("code End ho gaya")
