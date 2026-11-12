@@ -20,4 +20,3 @@ if is_prime(num):
 else:
     print(f"{num} prime number nahi hai")
     
-print("code End ho gaya")
