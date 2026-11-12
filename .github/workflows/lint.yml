@@ -12,5 +12,9 @@ jobs:
     steps:
       - name: Checkout/clone the code
         uses: actions/checkout@v7
+# this will install linter "ruff" so that it can checks the code
+      - name: install linter
+        run: pip install ruff
+        
         
     
